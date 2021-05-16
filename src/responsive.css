@@ -1,0 +1,254 @@
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+  .main {
+    width: 300%;
+    height: 100vh;
+    margin-left: -100%;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: 100vh !important;
+    z-index: 11;
+    margin-left: 0%;
+  }
+  .sidebar .container .arrowLeft {
+    display: block;
+  }
+  .sidebar .container {
+    padding: 10% 0 0 0;
+  }
+  .sidebar .nav-link {
+    margin-top: 0% !important;
+    margin-bottom: 2.5%;
+  }
+  .sidebar .follows {
+    margin-top: 4%;
+  }
+  .posts {
+    width: 100%;
+    z-index: 1;
+    padding-top: 6%;
+  }
+  .topbar-for-mobile {
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    display: flex;
+    z-index: 6;
+  }
+  .posts .all-posts {
+    padding: 0;
+  }
+  .posts .all-posts .particular-post {
+    width: 95%;
+  }
+  .posts .all-posts .particular-post .heading img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .posts .all-posts .particular-post .heading h6 {
+    font-size: 0.8rem;
+    margin-top: 4%;
+  }
+  .posts .all-posts .particular-post .heading p {
+    font-size: 0.6rem;
+  }
+  .particular-post .icons i {
+    font-size: 1.3rem;
+  }
+  .particular-post .icons span {
+    font-size: 1rem;
+    margin-top: 1%;
+  }
+  .messagebar {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    min-height: 100vh;
+    width: 100%;
+    z-index: 111;
+  }
+  .messagebar .top {
+    height: 16%;
+    margin-bottom: 0.5%;
+  }
+
+  .messagebar .input-group {
+    padding: 2% 4%;
+  }
+  .messagebar .top h6 {
+    margin-left: 14%;
+    margin-top: 7%;
+  }
+  .messagebar .top .arrowLeft {
+    display: block;
+    left: 3%;
+    top: 10%;
+  }
+  .messagebar .list .item {
+    padding: 0 3% 0 3%;
+  }
+  .messagebar .list .item .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .messagebar .list .item .title {
+    line-height: 1rem;
+  }
+  .messagebar .list .item p {
+    line-height: 0rem;
+  }
+  .searchSection {
+    width: 100%;
+    z-index: 1;
+    padding: 7% 0% 0 0%;
+  }
+  .searchSection .wrraper-1 {
+    grid-column-gap: 0.4em;
+    grid-template-columns: 40% 60%;
+    display: grid;
+    justify-content: center;
+    padding: 0 3%;
+  }
+  .searchSection .wrraper-2 {
+    grid-column-gap: 0.4rem;
+    grid-template-columns: 40% 60%;
+    display: grid;
+    justify-content: center;
+    padding: 0 3%;
+  }
+  .searchSection .input-group {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 4% auto;
+  }
+  .searchSection .input-group .form-control {
+  }
+  .reels {
+    width: 100%;
+  }
+  .reels .overlay {
+    height: 32%;
+  }
+  .reels .overlay .profile-detail {
+    margin-top: 10%;
+  }
+  .reels .overlay .profile-detail img {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+  }
+  .reels .overlay .profile-detail h6,
+  a {
+    font-size: 0.9rem;
+  }
+  .reels p {
+    font-size: 0.8rem;
+  }
+  .igtv {
+    width: 100%;
+  }
+  .igtv .overlay {
+    height: 32%;
+  }
+  .igtv .overlay .profile-detail {
+    margin-top: 10%;
+  }
+  .igtv .overlay .profile-detail img {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+  }
+  .igtv .overlay .profile-detail h6,
+  a {
+    font-size: 0.9rem;
+  }
+  .igtv p {
+    font-size: 0.8rem;
+  }
+  .activity {
+    width: 100%;
+    padding-top: 7%;
+  }
+  .activity .follow-request .content h6 {
+    line-height: 0;
+    margin-top: 8%;
+  }
+  .activity h6 {
+    margin: 4% 0;
+  }
+  .activity .follow-item {
+    padding: 2%;
+  }
+  .activity .follow-item .content {
+    width: 60%;
+    height: 3.5rem;
+  }
+  .activity .follow-item img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .activity .follow-item h6 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-top: 2%;
+  }
+  .activity .follow-item p {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  .activity .following-item {
+    padding: 2%;
+  }
+  .activity .suggesion-item {
+    padding: 2%;
+  }
+  .activity img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .activity .one {
+    line-height: 0;
+    margin-top: 14% !important;
+    font-size: 0.8rem;
+  }
+  .activity .sec {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+  }
+  .activity .btn {
+    font-size: 0.9rem;
+    padding: 1.5% 3% !important;
+  }
+
+  .settings {
+    width: 100%;
+    padding-top: 7%;
+    overflow-y: scroll;
+  }
+  .settings .content-1 h6 {
+    line-height: 2.35rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sidebar .container {
+    padding: 10% 0 0 0;
+  }
+  .sidebar .nav {
+    margin-top: 3% !important;
+  }
+  .sidebar .nav-link {
+    line-height: 0rem !important;
+    margin-top: 0% !important;
+    margin-bottom: 2%;
+    align-items: center;
+  }
+  .settings .content-1 h6 {
+    line-height: 1.8rem;
+  }
+}
