@@ -25,9 +25,9 @@ const Slide = (props) => {
       </video>
       <div className="overlay" keys={props.id}>
         <div className="profile-detail">
-          <img src={props.img} height="50" width="50" alt="" />
+          <img src={props.img} height="50" width="50" alt=".." />
           <h6 className="mr-2">{props.name} -</h6>
-          <a href="#" className="">
+          <a href="/" className="">
             Follow
           </a>
         </div>

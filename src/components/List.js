@@ -2,12 +2,6 @@ import React from "react";
 import ListItem from "./ListItem";
 
 const List = (props) => {
-  // const [item, setItem] = useState({
-  //   id: 0,
-  //   name: "",
-  //   img: "",
-  // });
-
   return (
     <div className="list">
       {props.itemData.map((data) => {
@@ -18,7 +12,6 @@ const List = (props) => {
               name={data.name}
               img={data.img}
               icon={data.icon}
-              // open={openMsg}
             />
           </>
         );

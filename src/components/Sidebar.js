@@ -16,7 +16,7 @@ const Sidebar = (props) => {
           <BsArrowLeft />
         </i>
         <div className="profile-details">
-          <img src={profile} height="90" width="90" alt="" />
+          <img src={profile} height="90" width="90" alt=".." />
           <div className="content">
             <h6>Jani Dean</h6>
             <p>Hello,How are you?</p>

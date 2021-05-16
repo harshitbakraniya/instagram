@@ -15,7 +15,7 @@ const Chat = (props) => {
         <i className="leftarrow">
           <BsArrowLeft onClick={chatOut} />
         </i>
-        <img src={props.img} height="40" width="40" />
+        <img src={props.img} height="40" width="40" alt=".." />
         <label className="nameLabel">{props.name}</label>
         <div className="call ml-auto">
           <i>
@@ -29,20 +29,20 @@ const Chat = (props) => {
       <div className="middleChat">
         <div className="chat">
           <div className="left d-flex">
-            <img src={props.img} height="30" width="30" />
+            <img src={props.img} height="30" width="30" alt=".." />
             <label className="left-label">hello</label>
           </div>
           <div className="right d-flex">
             <label className="left-label">How are you?</label>
-            <img src={overImg} height="30" width="30" />
+            <img src={overImg} height="30" width="30" alt=".." />
           </div>
           <div className="left d-flex">
-            <img src={props.img} height="30" width="30" />
+            <img src={props.img} height="30" width="30" alt=".." />
             <label className="left-label">I am fine</label>
           </div>
           <div className="right d-flex">
             <label className="left-label">Good</label>
-            <img src={overImg} height="30" width="30" />
+            <img src={overImg} height="30" width="30" alt=".." />
           </div>
         </div>
       </div>

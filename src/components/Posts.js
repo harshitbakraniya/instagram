@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/swiper.scss";
 import Post from "./Post";
 
@@ -14,7 +13,6 @@ const Posts = (props) => {
             spaceBetween={0}
             slidesPerView={7}
             breakpoints={{
-              // when window width is >= 640px
               300: {
                 width: 400,
                 slidesPerView: 4,
@@ -24,7 +22,7 @@ const Posts = (props) => {
             {props.value.map((data) => {
               return (
                 <SwiperSlide className="slide" key={data.id}>
-                  <img src={data.img} className={data.classname} alt="" />
+                  <img src={data.img} className={data.classname} alt=".." />
                   <h6>{data.name}</h6>
                 </SwiperSlide>
               );

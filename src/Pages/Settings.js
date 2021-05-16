@@ -17,8 +17,6 @@ const Settings = (props) => {
       input.checked = false;
     }
   });
-
-  var dark;
   const modeControl = () => {
     var input = document.getElementById("theme");
     if (localStorage.getItem("dark") === "false") {
@@ -107,13 +105,13 @@ const Settings = (props) => {
         </div>
         <h5>Logins</h5>
         <div className="content-2 d-flex flex-column">
-          <a href="">
+          <a href="/">
             <i>
               <RiAccountPinBoxLine />
             </i>
             Add account
           </a>
-          <a href="">
+          <a href="/">
             <i>
               <FiLogOut />
             </i>

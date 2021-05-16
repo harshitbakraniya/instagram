@@ -25,9 +25,6 @@ const Post = (props) => {
       </div>
       <div className="mainphoto">
         <img src={props.src} key={props.id} onDoubleClick={like} alt="" />
-        {/* <i className="centerheart" id={props.id}>
-          {props.heart}
-        </i> */}
       </div>
       <div className="icons">
         <i id={props.id} onClick={like}>

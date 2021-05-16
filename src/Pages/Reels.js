@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Video1 from "../assets/videos/Janmashtami.mp4";
 import Video2 from "../assets/videos/Ganesha Chaturthi.mp4";
 import profile1 from "../assets/images/photo-1.jpg";
@@ -12,7 +12,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/components/navigation/navigation.scss";
 // Import Swiper styles
 import "swiper/swiper.scss";
-import { BiLike } from "react-icons/bi";
 SwiperCore.use([Navigation]);
 const Reels = (props) => {
   return (

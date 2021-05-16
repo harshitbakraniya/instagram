@@ -21,7 +21,7 @@ const Search = () => {
       </div>
       <div className="wrraper-1">
         <div className="image">
-          <img src={Img1} alt="" />
+          <img src={Img1} alt=".." />
         </div>
         {/* <div className="image">
           <img src={Img2} />
@@ -34,10 +34,10 @@ const Search = () => {
       </div>
       <div className="wrraper-2">
         <div className="image">
-          <img src={Img3} alt="" />
+          <img src={Img3} alt=".." />
         </div>
         <div className="image">
-          <img src={Img4} alt="" />
+          <img src={Img4} alt=".." />
         </div>
         {/* <div className="image">
           <img src={Img5} />
@@ -45,10 +45,10 @@ const Search = () => {
       </div>
       <div className="wrraper-2">
         <div className="image">
-          <img src={Img6} alt="" />
+          <img src={Img6} alt=".." />
         </div>
         <div className="image">
-          <img src={Img2} alt="" />
+          <img src={Img2} alt=".." />
         </div>
         {/* <div className="image">
           <img src={Img3} />
@@ -56,7 +56,7 @@ const Search = () => {
       </div>
       <div className="wrraper-1">
         <div className="image">
-          <img src={Img1} alt="" />
+          <img src={Img1} alt=".." />
         </div>
         {/* <div className="image">
           <img src={Img2} />
