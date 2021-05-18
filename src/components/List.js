@@ -13,6 +13,7 @@ const List = (props) => {
                 name={data.name}
                 img={data.img}
                 icon={data.icon}
+                idofmsg={props.idofMessageBar}
               />
             </>
           );

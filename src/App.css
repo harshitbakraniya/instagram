@@ -427,6 +427,7 @@ i {
 }
 .chatBox .topbar i {
   font-size: 1.5rem;
+  color: var(--text_color);
 }
 .chatBox .topbar img {
   margin: 0 2% 0 1%;

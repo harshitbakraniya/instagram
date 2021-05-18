@@ -346,13 +346,15 @@ const App = () => {
           path={"/chat"}
           component={() => (
             <Chat
+              id="chat"
               name={localStorage.getItem("userName")}
               img={localStorage.getItem("userImg")}
+              idOfMsg="main"
             />
           )}
         />
       </Switch>
-      <Messagebar value={data.messageData} mainId="main" />
+      <Messagebar id="chat" value={data.messageData} mainId="main" />
     </div>
   );
 };

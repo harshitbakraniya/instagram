@@ -1,17 +1,20 @@
 import React from "react";
 import { AiOutlineCamera } from "react-icons/ai";
-import { BsCameraVideo, BsMic } from "react-icons/bs";
+import { BsArrowLeft, BsCameraVideo, BsMic } from "react-icons/bs";
 import { BiImageAlt } from "react-icons/bi";
 import { IoCallOutline } from "react-icons/io5";
 import overImg from "../assets/images/photo-2.jpg";
 
 const Chat = (props) => {
+  const openMsg = () => {
+    document.getElementById(props.idOfMsg).style.marginLeft = "-200%";
+  };
   return (
     <div className="chatBox" id={props.id}>
       <div className="topbar d-flex">
-        {/* <i className="leftarrow">
+        <i className="leftarrow" onClick={openMsg}>
           <BsArrowLeft />
-        </i> */}
+        </i>
         <img src={props.img} height="40" width="40" alt=".." />
         <label className="nameLabel">{props.name}</label>
         <div className="call ml-auto">

@@ -103,6 +103,27 @@
   .messagebar .list .item p {
     line-height: 0rem;
   }
+  .chatBox {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 111;
+  }
+  .chatBox .topbar img {
+    height: 30px;
+    width: 30px;
+  }
+  .chatBox .topbar label {
+    font-size: 0.8rem;
+  }
+  .chatBox .topbar .call {
+    width: 25%;
+  }
+  .chatBox .topbar .call i {
+    margin: 0 9%;
+  }
+  .chatBox .middleChat .chat .left-label {
+    font-size: 0.7rem;
+  }
   .searchSection {
     width: 100%;
     z-index: 1;

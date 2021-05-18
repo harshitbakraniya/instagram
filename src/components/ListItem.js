@@ -6,6 +6,9 @@ const ListItem = (props) => {
     localStorage.clear();
     localStorage.setItem("userName", props.name);
     localStorage.setItem("userImg", props.img);
+    if (window.screen.width < 700) {
+      document.getElementById(props.idofmsg).style.marginLeft = "-100%";
+    }
     // let messageName = localStorage.getItem("userName");
     // let messageImg = localStorage.getItem("userImg");
     // alert(messageName + messageImg);

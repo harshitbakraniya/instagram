@@ -1,5 +1,6 @@
 import React from "react";
 import List from "./List";
+import { Link } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsArrowLeft } from "react-icons/bs";
 
@@ -11,9 +12,11 @@ const Messagebar = (props) => {
     <div className="messagebar">
       <div className="top">
         <div className="title d-flex">
-          <i className="arrowLeft" onClick={closeMessagebar}>
-            <BsArrowLeft />
-          </i>
+          <Link to="/instagram" onClick={closeMessagebar}>
+            <i className="arrowLeft">
+              <BsArrowLeft />
+            </i>
+          </Link>
           <h6 className="">Messages</h6>
         </div>
 
@@ -28,7 +31,7 @@ const Messagebar = (props) => {
           />
         </div>
       </div>
-      <List itemData={props.value} />
+      <List itemData={props.value} idofMessageBar={props.mainId} />
     </div>
   );
 };
