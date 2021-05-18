@@ -411,7 +411,7 @@ i {
   height: 100%;
   background-color: var(--content_div);
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: hidden;
   position: relative;
 }
 .chatBox::-webkit-scrollbar {
@@ -424,6 +424,7 @@ i {
   box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
   background-color: var(--background_color);
   color: var(--text_color);
+  z-index: 11;
 }
 .chatBox .leftarrow {
   display: none;
@@ -448,17 +449,18 @@ i {
 }
 .chatBox .middleChat {
   position: relative;
-  /* top: 12%;
-  left: 0; */
+  top: 0%;
+  /* left: 0; */
   width: 100%;
   height: 100%;
   background-image: url(./assets/images/chatBack.png);
-  background-size: 240%;
+  background-size: 130%;
+  z-index: 1;
 }
 .chatBox .middleChat .chat {
   width: 100%;
   position: absolute;
-  bottom: 20%;
+  bottom: 23%;
   display: flex;
   flex-direction: column;
   padding: 1% 4%;
@@ -468,7 +470,7 @@ i {
 }
 .chatBox .middleChat .chat .left-label {
   background-color: var(--primary_color);
-  padding: 2% 4%;
+  padding: 1.5% 4%;
   border-radius: 1rem;
   color: var(--text_color);
   color: #fff;
@@ -485,7 +487,7 @@ i {
 }
 .chatBox .middleChat .chat .right-label {
   background-color: var(--primary_color);
-  padding: 2% 3%;
+  padding: 1.5% 3%;
   border-radius: 1rem;
   color: #fff;
   font-size: 0.9rem;
@@ -508,7 +510,7 @@ i {
 .chatBox .bottombar .form-control {
   height: 3rem;
   border-radius: 2rem;
-  padding-left: 13%;
+  padding: 0 15% 0 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: none;
   background-color: var(--background_color);
@@ -521,7 +523,7 @@ i {
 }
 .chatBox .bottombar .mic {
   position: absolute;
-  right: 16%;
+  right: 13%;
   font-size: 1.3rem;
 }
 .chatBox .bottombar .img {

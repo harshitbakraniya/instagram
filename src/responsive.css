@@ -104,12 +104,23 @@
     line-height: 0rem;
   }
   .chatBox {
-    min-height: 100vh;
+    max-height: 100%;
     width: 100%;
     z-index: 111;
+    /* overflow-y: hidden !important; */
   }
   .chatBox .topbar {
     height: 8%;
+    z-index: 111;
+  }
+  .chatBox .middleChat {
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+  }
+  .chatBox .middleChat .chat {
+    bottom: 13%;
   }
   .chatBox .topbar .leftarrow {
     display: block;
