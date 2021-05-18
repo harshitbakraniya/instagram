@@ -35,7 +35,7 @@ const Settings = (props) => {
       input.checked = localStorage.getItem("dark") !== "true";
       localStorage.setItem("dark", "false");
       document.documentElement.style.setProperty("--background_color", "#fff");
-      document.documentElement.style.setProperty("--content_div", "#f7f7f7");
+      document.documentElement.style.setProperty("--content_div", "#f7f8fa");
       document.documentElement.style.setProperty("--text_color", "#000");
     }
   };

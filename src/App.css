@@ -1,6 +1,6 @@
 :root {
   --background_color: #fff;
-  --content_div: #fff;
+  --content_div: #f7f8fa;
   --primary_color: #f94c85;
   --secondary_color: dodgerblue;
   --text_color: #000;
@@ -38,6 +38,7 @@ body {
   z-index: 11;
   margin: auto 0;
   background-color: var(--background_color);
+  border: 0.7px solid #e1e4e9;
 }
 .sidebar .container {
   padding: 10% 0;
@@ -54,8 +55,8 @@ body {
 }
 .sidebar .container .profile-details {
   width: 88%;
-  padding: 10% 2% 4% 1%;
-  margin: 10% auto 0 auto;
+  padding: 6% 2% 4% 1%;
+  margin: 13% auto 0 auto;
   border-radius: 0.7rem;
   background-color: var(--content_div);
 }
@@ -216,7 +217,7 @@ body {
   background-color: var(--background_color);
   border-radius: 0.7rem;
   margin: 0 auto 2% auto;
-  border: 0.7px solid rgba(0, 0, 0, 0.15);
+  border: 0.7px solid #e1e4e9;
 }
 i {
   cursor: pointer;
@@ -303,6 +304,7 @@ i {
   background-color: var(--background_color);
   overflow-y: hidden;
   /* display: none; */
+  border: 0.7px solid #e1e4e9;
 }
 /* .messagebar::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -507,6 +509,7 @@ i {
   display: flex;
   align-items: center;
   color: var(--text_color);
+  z-index: 11;
 }
 .chatBox .bottombar .form-control {
   height: 3rem;
