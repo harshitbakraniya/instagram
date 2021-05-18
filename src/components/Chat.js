@@ -12,7 +12,7 @@ const Chat = (props) => {
   return (
     <div className="chatBox" id={props.id}>
       <div className="topbar d-flex">
-        <i className="leftarrow" onClick={openMsg}>
+        <i className="leftarrow" id="leftarrow2" onClick={openMsg}>
           <BsArrowLeft />
         </i>
         <img src={props.img} height="40" width="40" alt=".." />

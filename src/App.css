@@ -425,6 +425,9 @@ i {
   background-color: var(--background_color);
   color: var(--text_color);
 }
+.chatBox .leftarrow {
+  display: none;
+}
 .chatBox .topbar i {
   font-size: 1.5rem;
   color: var(--text_color);

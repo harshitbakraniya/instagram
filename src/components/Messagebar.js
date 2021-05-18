@@ -13,7 +13,7 @@ const Messagebar = (props) => {
       <div className="top">
         <div className="title d-flex">
           <Link to="/instagram" onClick={closeMessagebar}>
-            <i className="arrowLeft">
+            <i className="arrowLeft" id="arrowLeft">
               <BsArrowLeft />
             </i>
           </Link>

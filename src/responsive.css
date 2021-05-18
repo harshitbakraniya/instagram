@@ -111,6 +111,9 @@
   .chatBox .topbar {
     height: 8%;
   }
+  .chatBox .topbar .leftarrow {
+    display: block;
+  }
   .chatBox .topbar img {
     height: 33px;
     width: 33px;
