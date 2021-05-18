@@ -122,6 +122,9 @@
   .chatBox .middleChat .chat {
     bottom: 13%;
   }
+  .chatBox .bottombar .form-control {
+    padding: 0 17% 0 12%;
+  }
   .chatBox .topbar .leftarrow {
     display: block;
   }
