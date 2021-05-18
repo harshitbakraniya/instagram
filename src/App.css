@@ -503,7 +503,7 @@ i {
   color: var(--text_color);
 }
 .chatBox .bottombar .form-control {
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 2rem;
   padding-left: 13%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

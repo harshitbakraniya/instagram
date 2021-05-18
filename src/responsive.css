@@ -108,12 +108,17 @@
     width: 100%;
     z-index: 111;
   }
+  .chatBox .topbar {
+    height: 8%;
+  }
   .chatBox .topbar img {
-    height: 30px;
-    width: 30px;
+    height: 33px;
+    width: 33px;
   }
   .chatBox .topbar label {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    margin-top: 2%;
+    margin-left: 1%;
   }
   .chatBox .topbar .call {
     width: 25%;
