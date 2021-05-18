@@ -8,9 +8,12 @@ import Reels from "./Pages/Reels";
 import IGTV from "./Pages/IGTV";
 import Activity from "./Pages/Activity";
 import Setting from "./Pages/Settings";
+import Register from "./Pages/Register";
+import Login from "./Pages/Login";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "./components/Sidebar";
 import Messagebar from "./components/Messagebar";
+import Chat from "./components/Chat";
 import {
   AiOutlineHome,
   AiOutlineHeart,
@@ -38,6 +41,7 @@ import { CgProfile } from "react-icons/cg";
 
 const App = () => {
   localStorage.setItem("dark", false);
+
   var data = {
     navData: [
       {
@@ -319,6 +323,8 @@ const App = () => {
         </i>
       </div>
       <Switch>
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
         <Route
           path="/instagram"
           component={() => (
@@ -335,6 +341,16 @@ const App = () => {
         <Route exact path="/IGTV" component={IGTV} />
         <Route exact path="/Activity" component={Activity} />
         <Route exact path="/Settings" component={() => <Setting />} />
+        <Route
+          exact
+          path={"/chat"}
+          component={() => (
+            <Chat
+              name={localStorage.getItem("userName")}
+              img={localStorage.getItem("userImg")}
+            />
+          )}
+        />
       </Switch>
       <Messagebar value={data.messageData} mainId="main" />
     </div>

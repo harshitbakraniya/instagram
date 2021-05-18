@@ -1,13 +1,18 @@
 import React from "react";
-import Chat from "./Chat";
+import { Link } from "react-router-dom";
 
 const ListItem = (props) => {
-  const openMsg = () => {
-    document.getElementById(props.name).style.right = "0";
+  const chatOpen = () => {
+    localStorage.clear();
+    localStorage.setItem("userName", props.name);
+    localStorage.setItem("userImg", props.img);
+    // let messageName = localStorage.getItem("userName");
+    // let messageImg = localStorage.getItem("userImg");
+    // alert(messageName + messageImg);
   };
   return (
-    <>
-      <div className="item d-flex" onClick={openMsg}>
+    <Link to={"/chat"} style={{ textDecoration: "none" }}>
+      <div className="item d-flex" onClick={chatOpen}>
         <img src={props.img} height="50" width="50" alt=".." />
         <div className="content mt-2">
           <p className="title">{props.name}</p>
@@ -15,8 +20,7 @@ const ListItem = (props) => {
         </div>
         <i>{props.icon}</i>
       </div>
-      <Chat id={props.name} img={props.img} name={props.name} />
-    </>
+    </Link>
   );
 };
 
