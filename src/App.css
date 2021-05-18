@@ -216,7 +216,7 @@ body {
   background-color: var(--background_color);
   border-radius: 0.7rem;
   margin: 0 auto 2% auto;
-  border: 0.7px solid #bcbcbc;
+  border: 0.7px solid rgba(0, 0, 0, 0.15);
 }
 i {
   cursor: pointer;
