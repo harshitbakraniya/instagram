@@ -451,14 +451,14 @@ i {
   /* top: 12%;
   left: 0; */
   width: 100%;
-  height: 88%;
+  height: 100%;
   background-image: url(./assets/images/chatBack.png);
   background-size: 240%;
 }
 .chatBox .middleChat .chat {
   width: 100%;
   position: absolute;
-  bottom: 12%;
+  bottom: 20%;
   display: flex;
   flex-direction: column;
   padding: 1% 4%;
@@ -911,9 +911,7 @@ video::-webkit-media-controls-volume-slider {
   border-radius: 0.5rem;
   transition: 0.5s;
 }
-.settings .content-1 h6:hover {
-  background-color: var(--content_div);
-}
+
 .settings .content-1 i {
   font-size: 1.4rem;
   margin-right: 2%;
