@@ -31,6 +31,174 @@ body {
   background-color: var(--content_div);
   transition: 0.7s;
 }
+
+/* Login */
+.login-sec {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: var(--background_color);
+  display: grid;
+  place-items: center;
+}
+.login-sec .inner-main {
+  width: 30%;
+  height: 55%;
+  background-color: var(--content_div);
+  margin: auto;
+  border-radius: 1em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 2% 3%;
+  z-index: 11;
+}
+.login-sec .inner-main .logo {
+  font-family: FontsFree-Net-Billabong;
+  font-size: 2rem;
+}
+.login-sec .inner-main .form-control {
+  height: 2.7rem;
+  border: none;
+  margin: 6% 0;
+  font-size: 0.9em;
+}
+.login-sec .inner-main .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.login-sec .inner-main .form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.login-sec .inner-main .links a {
+  font-size: 0.85em;
+}
+.login-sec .inner-main .btn {
+  margin-top: 8%;
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 0.9em;
+  padding: 1.5% 10%;
+}
+.login-sec .inner-main .btn:hover {
+  border: 1.5px solid var(--primary_color);
+  color: var(--text_color);
+  background-color: transparent;
+}
+.login-sec .left {
+  width: 30rem;
+  height: 30rem;
+  border: 3px solid var(--primary_color);
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  border-radius: 50%;
+  text-align: center;
+  animation: rot 15s infinite;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.login-sec .left img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.login-sec .left .first {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+}
+.login-sec .left .two {
+  position: absolute;
+  left: 65%;
+  top: 90%;
+}
+.login-sec .left .three {
+  position: absolute;
+  left: 65%;
+  top: 0%;
+}
+.login-sec .left .four {
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+.login-sec .left .five {
+  position: absolute;
+  left: 93%;
+  top: 50%;
+}
+.login-sec .right {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  border-radius: 50%;
+  border: 3px solid var(--primary_color);
+  animation: rot 15s infinite;
+}
+.login-sec .right img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.login-sec .right .first {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+}
+.login-sec .right .two {
+  position: absolute;
+  left: 65%;
+  top: 90%;
+}
+.login-sec .right .three {
+  position: absolute;
+  left: 65%;
+  top: 0%;
+}
+.login-sec .right .four {
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+.login-sec .right .five {
+  position: absolute;
+  left: 93%;
+  top: 50%;
+}
 /* sidebar */
 .sidebar {
   width: 21%;

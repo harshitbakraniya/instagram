@@ -353,6 +353,8 @@ const App = () => {
             />
           )}
         />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
       </Switch>
       <Messagebar id="chat" value={data.messageData} mainId="main" />
     </div>

@@ -18,9 +18,10 @@ const Slide = (props) => {
     }
     setStop(false);
   };
+
   return (
     <>
-      <video autoPlay muted loop onDoubleClick={like}>
+      <video loop onDoubleClick={like} control={true}>
         <source src={props.video}></source>
       </video>
       <div className="overlay" keys={props.id}>

@@ -36,6 +36,7 @@ const IGTV = () => {
               comment="10"
               name="harshit gajjar"
               desc="I love it.. #love #gujarati #insta #india"
+              control="true"
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -47,6 +48,7 @@ const IGTV = () => {
               comment="20"
               name="harsh gohel"
               desc="Very Nice......... #love #gujarati #insta #india"
+              control="true"
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -58,6 +60,7 @@ const IGTV = () => {
               comment="45"
               name="vatsal dendpara"
               desc="Cool .... #love #insta #gujarati"
+              control="true"
             />
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -69,6 +72,7 @@ const IGTV = () => {
               comment="24"
               name="nitant joshi"
               desc=".......... #ganpati #love #fav"
+              control="true"
             />
           </SwiperSlide>
         </Swiper>
