@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/Logo.png";
+import { NavLink } from "react-router-dom";
 import profile1 from "../assets/images/photo-1.jpg";
 import profile2 from "../assets/images/photo-2.jpg";
 import profile3 from "../assets/images/photo-3.jpg";
@@ -36,12 +37,12 @@ const Login = () => {
           placeholder="Password"
         />
         <div className="links d-flex">
-          <a className="text-left" href="/">
+          <NavLink className="text-left" to="/register">
             Already user ?
-          </a>
-          <a className="ml-auto" href="/">
+          </NavLink>
+          <NavLink className="ml-auto" to="/login">
             Forget password ?
-          </a>
+          </NavLink>
         </div>
         <div className="btn">Login</div>
       </div>
