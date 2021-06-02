@@ -46,7 +46,6 @@ body {
 }
 .login-sec .inner-main {
   width: 30%;
-  height: 55%;
   background-color: var(--content_div);
   margin: auto;
   border-radius: 1em;
@@ -72,16 +71,30 @@ body {
 }
 .login-sec .inner-main .links a {
   font-size: 0.85em;
+  cursor: pointer;
 }
-.login-sec .inner-main .btn {
+.login-sec .inner-main .login {
   margin-top: 8%;
   background-color: var(--primary_color);
   color: #fff;
   font-size: 0.9em;
   padding: 1.5% 10%;
 }
-.login-sec .inner-main .btn:hover {
+.login-sec .inner-main .facebook {
+  margin-top: 8%;
+  background-color: dodgerblue;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 1.5% 5%;
+  margin-left: 3%;
+}
+.login-sec .inner-main .login:hover {
   border: 1.5px solid var(--primary_color);
+  color: var(--text_color);
+  background-color: transparent;
+}
+.login-sec .inner-main .facebook:hover {
+  border: 1.5px solid dodgerblue;
   color: var(--text_color);
   background-color: transparent;
 }
@@ -95,6 +108,7 @@ body {
   border-radius: 50%;
   text-align: center;
   animation: rot 15s infinite;
+  cursor: pointer;
 }
 @keyframes rot {
   0% {
@@ -379,7 +393,7 @@ body {
   overflow-y: scroll;
 }
 .posts .all-posts .particular-post {
-  max-height: 55rem;
+  height: 80%;
   width: 90%;
   padding: 3%;
   background-color: var(--background_color);
@@ -411,7 +425,7 @@ i {
 }
 .posts .mainphoto {
   width: 100%;
-  height: 24rem;
+  height: 80%;
   margin: 2% 0 2% 0;
 }
 .posts .mainphoto img {
@@ -640,7 +654,7 @@ i {
 }
 .chatBox .middleChat .chat .left-label {
   background-color: var(--primary_color);
-  padding: 1.5% 4%;
+  padding: 1% 2%;
   border-radius: 1rem;
   color: var(--text_color);
   color: #fff;
@@ -657,7 +671,7 @@ i {
 }
 .chatBox .middleChat .chat .right-label {
   background-color: var(--primary_color);
-  padding: 1.5% 3%;
+  /* padding: 1% 2%; */
   border-radius: 1rem;
   color: #fff;
   font-size: 0.9rem;
@@ -981,6 +995,7 @@ video::-webkit-media-controls-volume-slider {
 }
 .activity .follow-request .content p {
   color: var(--light_gray);
+  font-size: 0.8em;
 }
 .activity .follow-item {
   background-color: var(--background_color);
@@ -998,11 +1013,12 @@ video::-webkit-media-controls-volume-slider {
   margin-left: 2%;
 }
 .activity .follow-item h6 {
-  line-height: 1.5rem;
+  line-height: 1.5em;
+  font-size: 0.9em;
 }
 .activity .follow-item p {
-  line-height: 0.5;
-  font-size: 0.9rem;
+  line-height: 0.5em;
+  font-size: 0.8em;
   color: var(--light_gray);
 }
 .activity .follow-item .btn {
@@ -1024,9 +1040,13 @@ video::-webkit-media-controls-volume-slider {
   border-radius: 50%;
   object-fit: cover;
 }
+.activity .following-item h6 {
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
 .activity .following-item p {
-  line-height: 0;
-  margin-top: 10%;
+  line-height: 0.5em;
+  font-size: 0.8em;
 }
 .activity .following-item .sec {
   color: var(--light_gray);
@@ -1042,9 +1062,13 @@ video::-webkit-media-controls-volume-slider {
   border-radius: 50%;
   object-fit: cover;
 }
+.activity .suggesion-item h6 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
 .activity .suggesion-item p {
-  line-height: 0;
-  margin-top: 10%;
+  line-height: 0.5em;
+  font-size: 0.8em;
 }
 .activity .suggesion-item .sec {
   color: var(--light_gray);

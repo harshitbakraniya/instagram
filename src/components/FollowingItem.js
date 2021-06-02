@@ -5,7 +5,7 @@ const FollowingItem = (props) => {
     <div className="following-item d-flex">
       <img src={props.img} height="50" width="50" alt=".." />
       <div className="content ml-2">
-        <p className="one mb-4">{props.name}</p>
+        <h6 className="one ">{props.name}</h6>
         <p className="sec">{props.content}</p>
       </div>
     </div>
