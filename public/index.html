@@ -39,26 +39,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var input = document.getElementById("theme");
+      if (localStorage.getItem("dark") === "true") {
+        document.documentElement.style.setProperty(
+          "--background_color",
+          "rgb(28,28,28)"
+        );
+        document.documentElement.style.setProperty(
+          "--content_div",
+          "rgb(48,48,48)"
+        );
+        document.documentElement.style.setProperty("--text_color", "#fff");
+        input.checked = true;        
+      }
+      else if (localStorage.getItem("dark") === "false") {        
+        document.documentElement.style.setProperty("--background_color", "#fff");
+        document.documentElement.style.setProperty("--content_div", "#f7f7f7");
+        document.documentElement.style.setProperty("--text_color", "#000");
+        input.checked = false;
+      }
+    </script>
   </body>
-  <script>
-    var input = document.getElementById("theme");
-    if (localStorage.getItem("dark") === "true") {
-      document.documentElement.style.setProperty(
-        "--background_color",
-        "rgb(28,28,28)"
-      );
-      document.documentElement.style.setProperty(
-        "--content_div",
-        "rgb(48,48,48)"
-      );
-      document.documentElement.style.setProperty("--text_color", "#fff");
-      input.checked = true;
-    }
-    if (localStorage.getItem("dark") === "false") {
-      document.documentElement.style.setProperty("--background_color", "#fff");
-      document.documentElement.style.setProperty("--content_div", "#f7f7f7");
-      document.documentElement.style.setProperty("--text_color", "#000");
-      input.checked = false;
-    }
-  </script>
+  
 </html>

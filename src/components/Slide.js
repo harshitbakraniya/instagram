@@ -21,7 +21,7 @@ const Slide = (props) => {
 
   return (
     <>
-      <video loop onDoubleClick={like} control={true}>
+      <video loop onDoubleClick={like} control={true} autoPlay>
         <source src={props.video}></source>
       </video>
       <div className="overlay" keys={props.id}>

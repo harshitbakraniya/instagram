@@ -15,13 +15,13 @@ const Settings = (props) => {
       input.checked = true;
     } else {
       input.checked = false;
-    }
+    }    
   });
-  const modeControl = () => {
+  const modeControl = () => {        
     var input = document.getElementById("theme");
-    if (localStorage.getItem("dark") === "false") {
+    if (localStorage.getItem("dark") === "false") {      
       input.checked = localStorage.getItem("dark") === "false";
-      localStorage.setItem("dark", "true");
+      localStorage.setItem("dark", "true");      
       document.documentElement.style.setProperty(
         "--background_color",
         "rgb(28,28,28)"

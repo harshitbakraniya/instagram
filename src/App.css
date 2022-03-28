@@ -31,7 +31,6 @@ body {
   background-color: var(--content_div);
   transition: 0.7s;
 }
-
 /* Login */
 .login-sec {
   width: 100%;
@@ -393,7 +392,7 @@ body {
   overflow-y: scroll;
 }
 .posts .all-posts .particular-post {
-  height: 80%;
+  height: 100%;
   width: 90%;
   padding: 3%;
   background-color: var(--background_color);
@@ -425,7 +424,7 @@ i {
 }
 .posts .mainphoto {
   width: 100%;
-  height: 80%;
+  height: 82%;
   margin: 2% 0 2% 0;
 }
 .posts .mainphoto img {
@@ -596,7 +595,7 @@ i {
   background-color: var(--content_div);
   margin: 0 auto;
   overflow-y: hidden;
-  position: relative;
+  position: relative;  
 }
 .chatBox::-webkit-scrollbar {
   display: none;
@@ -634,12 +633,13 @@ i {
 .chatBox .middleChat {
   position: relative;
   top: 0%;
-  /* left: 0; */
+  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-image: url(./assets/images/chatBack.png);
-  background-size: 130%;
-  z-index: 1;
+  background-size: 100%;
+  z-index: 1;      
 }
 .chatBox .middleChat .chat {
   width: 100%;
@@ -647,19 +647,20 @@ i {
   bottom: 23%;
   display: flex;
   flex-direction: column;
-  padding: 1% 4%;
+  padding: 1rem 2.2rem;
 }
 .chatBox .middleChat .chat .left {
   align-items: center;
 }
 .chatBox .middleChat .chat .left-label {
   background-color: var(--primary_color);
-  padding: 1% 2%;
+  padding: 0.7rem 1.5rem 0.7rem 1rem;
   border-radius: 1rem;
   color: var(--text_color);
   color: #fff;
   font-size: 0.9rem;
   margin: 1% 2%;
+  text-align: left;
 }
 .chatBox .middleChat .chat .left img {
   border-radius: 50%;
@@ -686,14 +687,15 @@ i {
   bottom: 0;
   height: 12%;
   width: 100%;
-  padding: 0 3%;
+  padding: 0 0%;
   display: flex;
   align-items: center;
   color: var(--text_color);
   z-index: 11;
+  padding: 1rem 2.2rem;
 }
 .chatBox .bottombar .form-control {
-  height: 3rem;
+  height: 4rem;
   border-radius: 2rem;
   padding: 0 15% 0 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
